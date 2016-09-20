@@ -53,7 +53,7 @@ public class SafeObject<T: Object>: Equatable {
     Original Object's primary key value
     */
     public var primaryKeyValue: AnyObject! {
-        return self.rbqSafeRealmObject.primaryKeyValue
+        return self.rbqSafeRealmObject.primaryKeyValue as AnyObject!
     }
     
     /**
